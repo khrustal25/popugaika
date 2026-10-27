@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Попугайка — интерактивный справочник для владельцев попугаев. Питание, уход, приручение, поведение, здоровье и помощник Перышко" />
+  <meta name="theme-color" content="#35A86B" />
+  <meta name="color-scheme" content="light" />
+  <meta name="application-name" content="Попугайка" />
+  <title>Попугайка — всё о домашних попугаях</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=ux1" />
+</head>
+<body>
+  <header class="top-nav" id="top-nav">
+    <a href="#/" class="brand" data-link>
+      <span class="brand-mark" aria-hidden="true">🦜</span>
+      <span>
+        <strong>Попугайка</strong>
+        <small>Всё о твоём попугае</small>
+      </span>
+    </a>
+    <nav class="top-links" aria-label="Основное меню">
+      <a href="#/" data-link data-nav="home">Главная</a>
+      <a href="#/my-bird" data-link data-nav="my-bird">Моя птичка</a>
+      <a href="#/nutrition" data-link data-nav="nutrition">Питание</a>
+      <a href="#/chat" data-link data-nav="chat">Перышко</a>
+      <a href="#/guide" data-link data-nav="guide">Справочник</a>
+    </nav>
+    <a href="#/beginner" class="btn btn-sun btn-sm" data-link>Новичку</a>
+  </header>
+  <div class="selected-bar" id="selected-bar" hidden></div>
+
+  <main class="page" id="app" aria-live="polite"></main>
+
+  <nav class="bottom-nav" aria-label="Мобильное меню">
+    <a href="#/" data-link data-nav="home">
+      <span class="nav-ico" aria-hidden="true">🏠</span>
+      <span>Главная</span>
+    </a>
+    <a href="#/my-bird" data-link data-nav="my-bird">
+      <span class="nav-ico" aria-hidden="true">🦜</span>
+      <span>Моя птичка</span>
+    </a>
+    <a href="#/nutrition" data-link data-nav="nutrition">
+      <span class="nav-ico" aria-hidden="true">🥦</span>
+      <span>Питание</span>
+    </a>
+    <a href="#/chat" data-link data-nav="chat">
+      <span class="nav-ico" aria-hidden="true">🪶</span>
+      <span>Перышко</span>
+    </a>
+    <a href="#/guide" data-link data-nav="guide">
+      <span class="nav-ico" aria-hidden="true">📖</span>
+      <span>Справочник</span>
+    </a>
+  </nav>
+
+  <!-- Данные как обычные скрипты — работают и на GitHub Pages, и локально -->
+  <script src="data/species.js?v=ux1"></script>
+  <script src="data/foods.js?v=ux1"></script>
+  <script src="data/care.js?v=ux1"></script>
+  <script src="data/behavior.js?v=ux1"></script>
+  <script src="data/health.js?v=ux1"></script>
+  <script src="data/training.js?v=ux1"></script>
+  <script src="data/beginner.js?v=ux1"></script>
+  <script src="data/chat.js?v=ux1"></script>
+  <script src="data/ai-config.js?v=ux1"></script>
+  <script src="data/peryshko-knowledge.js?v=ux1"></script>
+  <script src="js/peryshko-ai.js?v=ux1"></script>
+  <script src="script.js?v=ux1"></script>
+</body>
+</html>

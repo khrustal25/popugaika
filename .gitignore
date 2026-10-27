@@ -1,0 +1,18 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Leftovers from previous React/Vite setup (if any)
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
